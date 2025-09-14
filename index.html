@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rizwan Ahmed — Frontend Developer</title>
+  <meta name="description" content="Official portfolio of Rizwan Arain — Frontend developer, UI/UX enthusiast." />
+  <link rel="stylesheet" href="port.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#">Rizwan Ahmed<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <button id="navToggle" aria-label="Toggle navigation" class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Rizwan</span></h1>
+          <p>Frontend Developer — I build clean, responsive websites and user interfaces that people enjoy using.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">See my work</a>
+            <a href="#contact" class="btn ghost">Hire me</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="my-pic.png" alt="portfolio preview">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>I’m a frontend developer with a focus on building accessible, performant, and beautiful interfaces. I enjoy turning ideas into clean, maintainable code — HTML, CSS, and JavaScript are my tools of choice.</p>
+        <ul>
+          <li><strong>Location:</strong> Pakistan</li>
+          <li><strong>Experience:</strong> 2+ years building web projects</li>
+          <li><strong>Availability:</strong> Freelance / Full-time</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <img src="https://via.placeholder.com/600x360.png?text=Project+1" alt="Project 1 screenshot">
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>Responsive landing page with modern layout and animations.</p>
+            <div class="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/600x360.png?text=Project+2" alt="Project 2 screenshot">
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>Interactive UI with vanilla JavaScript and accessible controls.</p>
+            <div class="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/600x360.png?text=Project+3" alt="Project 3 screenshot">
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>Small e-commerce UI prototype with checkout flow.</p>
+            <div class="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+        <span>Responsive Design</span>
+        <span>Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you’d like to work together — send me a message.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rizwan Arain — Built with care.</p>
+      <div class="social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
